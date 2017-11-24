@@ -17,7 +17,12 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore Environment Specific Files
+.env
+
+# Ignore JS Files
 /node_modules
 /yarn-error.log
 
+# Ignore Editor config Files
 .byebug_history
