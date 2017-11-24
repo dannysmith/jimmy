@@ -36,11 +36,15 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # Development
+  gem 'byebug', platforms: %i[mri mingw x64_mingw] # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'dotenv-rails'
   gem 'pry-doc'
   gem 'pry-rails'
+
+  # Testing
+  gem 'capybara'
+  gem 'factory_bot_rails'
   gem 'rspec-rails'
 end
 
