@@ -26,3 +26,6 @@
 
 # Ignore Editor config Files
 .byebug_history
+.tags
+.tags1
+.vscode/
