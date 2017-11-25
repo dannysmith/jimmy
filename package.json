@@ -1,5 +1,10 @@
 {
   "name": "jimmy",
-  "private": true,
+  "private": false,
+  "author": "Danny Smith",
+  "contributors": [
+    "Danny Smith <hi@danny.is> (http://danny.is)"
+  ],
+  "license": "UNLICENSED",
   "dependencies": {}
 }
