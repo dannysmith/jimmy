@@ -14,6 +14,22 @@ Mainly, Jimmy is intended as an example app, for use when Danny is teaching. It 
 
 ## Installation and Configuration
 
+Ensure you have Homebrew installed (if you are on macOS), and install dependancies:
+
+```shell
+brew install postgresql # Follow instructions
+brew install redis
+brew install nodejs
+```
+
+Now clone the project and run the setup commands
+
+```shell
+git clone git@github.com:dannysmith/jimmy.git
+cd jimmy
+bin/setup
+```
+
 ## Running the App Locally
 
 ## Running the Tests
