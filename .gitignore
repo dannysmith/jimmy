@@ -36,3 +36,6 @@
 .tags
 .tags1
 .vscode/
+/public/packs
+/public/packs-test
+/node_modules
