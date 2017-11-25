@@ -48,6 +48,11 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 3.1'
+
+  # Dynamic Analysis
+  gem 'bullet'
+
+  # Static analysis
 end
 
 group :development do
