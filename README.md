@@ -1,6 +1,6 @@
 # Jimmy
 
-[ ![Codeship Status](https://app.codeship.com/xxx)]()
+[![Codeship Status](https://app.codeship.com/xxx)]()
 [![Code Climate](https://codeclimate.com/xxx)]()
 [![Test Coverage](https://codeclimate.com/xxx)]()
 [![Issue Count](https://codeclimate.com/xxx)]()
