@@ -12,8 +12,8 @@ end
 gem 'rails', '~> 5.1.4'
 
 # Databases
-gem 'redis', '~> 3.0'
 gem 'pg'
+gem 'redis', '~> 3.0'
 
 # Server
 gem 'puma', '~> 3.7'
@@ -45,7 +45,7 @@ group :development, :test do
   # Development
   gem 'better_errors' # Better Rails error pages
   gem 'binding_of_caller' # Required by better errors.
-  gem 'byebug', platforms: %i[mri mingw x64_mingw] # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: %i[mri mingw x64_mingw] # Debugger. Call 'byebug'.
   gem 'dotenv-rails'
   gem 'meta_request' # Supporting gem for RailsPanel chrome extension.
   gem 'pry-doc'

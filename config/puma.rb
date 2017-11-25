@@ -14,9 +14,7 @@ environment ENV.fetch('RAILS_ENV') { 'development' }
 
 # Prevent pry timing out by setting PUMA_REQUEST_TIMEOUT=3600 (1 hour)
 puma_request_timeout = ENV['PUMA_REQUEST_TIMEOUT']
-if puma_request_timeout
-  worker_timeout puma_request_timeout.to_i
-end
+worker_timeout puma_request_timeout.to_i if puma_request_timeout
 
 # Specifies the number of `workers` to boot in clustered mode.
 # Workers are forked webserver processes. If using threads and workers together
