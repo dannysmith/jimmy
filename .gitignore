@@ -20,6 +20,9 @@
 # Ignore static analysis reports
 /coverage/*
 
+# Ignore local/private notes
+/notes/*
+
 # Ignore Environment Specific Files
 .env
 
