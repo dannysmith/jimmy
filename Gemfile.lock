@@ -360,6 +360,7 @@ DEPENDENCIES
   meta_request
   paranoia (~> 2.2)
   pg
+  pry
   pry-doc
   pry-rails
   puma (~> 3.7)

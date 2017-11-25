@@ -50,6 +50,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw] # Debugger. Call 'byebug'.
   gem 'dotenv-rails'
   gem 'meta_request' # Supporting gem for RailsPanel chrome extension.
+  gem 'pry'
   gem 'pry-doc'
   gem 'pry-rails'
 
