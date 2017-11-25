@@ -1,0 +1,18 @@
+#inherit_from: .rubocop_todo.yml
+require:
+  - rubocop/cop/internal_affairs
+
+Metrics/BlockLength:
+  CountComments: false
+  Max: 20
+  Exclude:
+  - 'config/environments/*'
+
+Metrics/MethodLength:
+  CountComments: false
+
+Metrics/LineLength:
+  Max: 130
+
+Documentation:
+  Enabled: false
