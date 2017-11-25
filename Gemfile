@@ -37,8 +37,9 @@ gem 'turbolinks', '~> 5'
 # API
 gem 'jbuilder', '~> 2.5'
 
-# Active Model
+# Active Model/Record
 gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
+gem 'paranoia', '~> 2.2' # Soft Deletion
 
 group :development, :test do
   # Development
