@@ -37,10 +37,10 @@ chdir APP_ROOT do
 
   # Add Git remotes
   # TODO: Uncomment once environments are configured
-  # puts "\n== Configuring Heroku Remotes =="
-  # system('git remote add staging git@heroku.com:jimmy-staging.git')
-  # system('git remote add production git@heroku.com:jimmy-production.git')
-  # system('git config heroku.remote staging')
+  puts "\n== Configuring Heroku Remotes =="
+  system('git remote add staging git@heroku.com:jimmy-staging.git')
+  system('git remote add production git@heroku.com:jimmy-production.git')
+  system('git config heroku.remote staging')
 
   puts "\n== Preparing database =="
   system! 'bin/rails db:setup'
