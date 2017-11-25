@@ -60,6 +60,7 @@ group :development, :test do
 
   # Dynamic Analysis
   gem 'bullet' # N+1 Queries
+  gem 'traceroute' # Rake tasks for finding unused routes and unreachable controllers
 
   # Static analysis
   gem 'brakeman',               require: false # Security audit

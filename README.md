@@ -39,6 +39,7 @@ rubrowser            # Run a server showing the app's node graph
 
 ```ruby
 rake notes      # See TODO comments
+rake traceroute # Search for unused routes and unreachable actions
 ```
 
 ## Commits Policy and workflow
