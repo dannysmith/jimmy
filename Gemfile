@@ -40,8 +40,11 @@ gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 
 group :development, :test do
   # Development
+  gem 'better_errors' # Better Rails error pages
+  gem 'binding_of_caller' # Required by better errors.
   gem 'byebug', platforms: %i[mri mingw x64_mingw] # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'dotenv-rails'
+  gem 'meta_request' # Supporting gem for RailsPanel chrome extension.
   gem 'pry-doc'
   gem 'pry-rails'
 
