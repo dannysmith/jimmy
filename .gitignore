@@ -17,6 +17,9 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore static analysis reports
+/coverage/*
+
 # Ignore Environment Specific Files
 .env
 
