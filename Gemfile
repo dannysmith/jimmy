@@ -17,6 +17,7 @@ gem 'redis', '~> 3.0'
 
 # Server
 gem 'puma', '~> 3.7'
+gem 'rack-timeout'
 
 # Styling
 gem 'sass-rails', '~> 5.0'
