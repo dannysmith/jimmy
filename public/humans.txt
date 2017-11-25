@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Danny Smith -- Engineer -- @dannysmith
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    React.js
+    Ruby on Rails
