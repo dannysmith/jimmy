@@ -62,6 +62,8 @@ rake traceroute # Search for unused routes and unreachable actions
 
 ## Deployment Pipeline
 
+The apps deployment pipeline is managed entirely via Heroku.
+
 ## Contributors
 
 | Github        | Name              | Email                    |
