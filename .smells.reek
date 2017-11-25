@@ -1,0 +1,11 @@
+---
+IrresponsibleModule:
+  exclude:
+  - ApplicationCable::Channel
+  - ApplicationCable::Connection
+  - ApplicationController
+  - ApplicationHelper
+  - ApplicationJob
+  - ApplicationMailer
+  - ApplicationRecord
+  - Jimmy::Application
