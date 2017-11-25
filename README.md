@@ -1,24 +1,38 @@
-# README
+# Jimmy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[ ![Codeship Status](https://app.codeship.com/xxx)]()
+[![Code Climate](https://codeclimate.com/xxx)]()
+[![Test Coverage](https://codeclimate.com/xxx)]()
+[![Issue Count](https://codeclimate.com/xxx)]()
+[![Dependency Status](https://gemnasium.com/xxx)]()
 
-Things you may want to cover:
+Jimmy is a todo list. That's all.
 
-* Ruby version
+## Why Does Jimmy Exist?
 
-* System dependencies
+Mainly, Jimmy is intended as an example app, for use when Danny is teaching. It also serves as a playground for testing new tools, best practices and ideas. One day, it might be good enough to use on a daily basis, for managing todos. That day is a long way off.
 
-* Configuration
+## Installation and Configuration
 
-* Database creation
+## Running the App Locally
 
-* Database initialization
+## Running the Tests
 
-* How to run the test suite
+## Code Quality
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Useful Rake Tasks
 
-* ...
+```ruby
+rake notes      # See TODO comments
+```
+
+## Commits Policy and workflow
+
+## Deployment Pipeline
+
+## Contributors
+
+| Github        | Name              | Email                    |
+| --------------|-------------------|--------------------------|
+| dannysmith    | Danny Smith       | hi@danny.is              |
