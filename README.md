@@ -32,6 +32,13 @@ bin/setup
 
 ## Running the App Locally
 
+Once you're set up, you can run the app with these two commands, in seperate terminals:
+
+```shell
+bin/rails s
+bin/webpack-dev-server
+```
+
 ## Running the Tests
 
 ## Code Quality
