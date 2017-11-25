@@ -59,9 +59,20 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
 
   # Dynamic Analysis
-  gem 'bullet'
+  gem 'bullet' # N+1 Queries
 
   # Static analysis
+  gem 'brakeman',               require: false # Security audit
+  gem 'bundler-audit',          require: false # Depenancy audit
+  gem 'mdl',                    require: false # Markdown linter
+  gem 'rails_best_practices',   require: false # Rails BP audit
+  gem 'reek',                   require: false # Code Smell audit
+  gem 'rubocop',                require: false # Code stle checker
+  gem 'sandi_meter',            require: false # Sandi Metz' BP audit
+
+  # static Analysis GUIs
+  gem 'rubrowser',              require: false # Generate a ruby code dependency graph
+  gem 'rubycritic',             require: false # GUI for other Static Analysis tools
 end
 
 group :development do

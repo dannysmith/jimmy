@@ -19,6 +19,7 @@
 
 # Ignore static analysis reports
 /coverage/*
+/sandi_meter/*
 
 # Ignore local/private notes
 /notes/*

@@ -20,6 +20,20 @@ Mainly, Jimmy is intended as an example app, for use when Danny is teaching. It 
 
 ## Code Quality
 
+There are a number of code quality tools available in this project. The following commands are available at the root of the project:
+
+```shell
+brakeman             # Scan for security vulnerabilities
+bundler-audit        # Scan for outdated dependencies
+mdl filename.md      # Scan a specific markdown file for style
+rails_best_practices # Check for adherance to rails best practaces
+reek                 # Scan for code smells
+rubocop              # Scan for ruby styleguide violations
+sandi_meter -d       # Print a report showing adherance to Sandy Metz' rules
+
+rubycritic           # Open a browser window showing code quality metrics
+rubrowser            # Run a server showing the app's node graph
+```
 
 ## Useful Rake Tasks
 
