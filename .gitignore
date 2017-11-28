@@ -24,6 +24,9 @@
 # Ignore local/private notes
 /notes/*
 
+# Ignore Design files
+/design/*
+
 # Ignore Environment Specific Files
 .env
 
