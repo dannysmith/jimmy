@@ -33,6 +33,7 @@ gem 'shog'
 
 # Reporting
 gem 'sentry-raven'
+gem 'skylight'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
