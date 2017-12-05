@@ -4,9 +4,6 @@
     "postdeploy":"rake db:setup"
   },
   "env":{
-    "APPLICATION_HOST": {
-      "required": true
-    },
     "RACK_ENV": {
       "required": true
     },
