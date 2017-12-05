@@ -1,14 +1,23 @@
 {
   "name":"Jimmy",
-  "scripts":{
+  "scripts": {
     "postdeploy":"rake db:setup"
   },
   "env":{
+    "APPLICATION_HOST": {
+      "required": true
+    },
     "HEROKU_APP_NAME": {
       "required": true
     },
     "HEROKU_PARENT_APP_NAME": {
       "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "generator": "secret"
     }
   },
   "environments": {
