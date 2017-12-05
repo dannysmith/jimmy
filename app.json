@@ -1,4 +1,16 @@
 {
+  "name":"Jimmy",
+  "scripts":{
+    "postdeploy":"rake db:setup"
+  },
+  "env":{
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
+    "HEROKU_PARENT_APP_NAME": {
+      "required": true
+    }
+  },
   "environments": {
     "test": {
       "addons": [
