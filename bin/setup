@@ -25,15 +25,11 @@ chdir APP_ROOT do
 
   # Copy dotenv file
   puts "\n== Copying .env File =="
-  unless File.exist?('.env.example')
-    cp '.env.example', '.env'
-  end
+  cp '.env.example', '.env' unless File.exist?('.env.example')
 
   # Create notes directory for local notes
   puts "\n== Creating notes directory =="
-  unless File.exist?('notes')
-    Dir.mkdir 'notes'
-  end
+  Dir.mkdir 'notes' unless File.exist?('notes')
 
   # Add Git remotes
   # TODO: Uncomment once environments are configured
