@@ -56,6 +56,9 @@ sandi_meter -d       # Print a report showing adherance to Sandy Metz' rules
 
 rubycritic           # Open a browser window showing code quality metrics
 rubrowser            # Run a server showing the app's node graph
+
+bundle exec derailed bundle:mem     # Analyse memory at boottime
+bundle exec derailed bundle:objects # Analyse memory at runtime
 ```
 
 ## Useful Rake Tasks

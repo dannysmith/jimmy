@@ -52,6 +52,7 @@ group :development, :test do
   # Development
   gem 'awesome_print'
   gem 'better_errors' # Better Rails error pages
+  gem 'derailed_benchmarks' # Benchmarking
   gem 'binding_of_caller' # Required by better errors.
   gem 'byebug', platforms: %i[mri mingw x64_mingw] # Debugger. Call 'byebug'.
   gem 'dotenv-rails'
@@ -59,6 +60,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-doc'
   gem 'pry-rails'
+  gem 'stackprof' # Used by derailed gem for profiling
 
   # Testing
   gem 'capybara'
