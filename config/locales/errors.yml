@@ -1,0 +1,6 @@
+# Error messages to be shown to users when exceptions are raised.
+
+en:
+  errors:
+    unknown: 'An unknown error occured'
+    example: 'This is an example message for the user'
