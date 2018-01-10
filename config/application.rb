@@ -34,5 +34,9 @@ module Jimmy
     config.generators do |g|
       g.orm :active_record, primary_key_type: :uuid
     end
+
+    # Require everything in lib/jimmy
+    config.autoload_paths << Rails.root.join("lib")
+    config.eager_load_paths << Rails.root.join("lib")
   end
 end
