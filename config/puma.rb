@@ -55,3 +55,15 @@ worker_timeout puma_request_timeout.to_i if puma_request_timeout
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
+
+# Send low-level errors to Sentry
+lowlevel_error_handler do |exception, env|
+  Raven.capture_exception(
+    exception,
+    message: exception.message,
+    extra: { :puma => env },
+    transaction: 'Puma'
+  )
+  # Send a Rack response to the client
+  [500, {}, ["An error has occurred, and engineers have been informed. Please reload the page.\n"]]
+end
