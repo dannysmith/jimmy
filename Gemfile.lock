@@ -247,7 +247,7 @@ GEM
       execjs
       railties (>= 3.2)
       tilt
-    redis (3.3.5)
+    redis (4.0.1)
     reek (4.7.3)
       codeclimate-engine-rb (~> 0.4.0)
       parser (>= 2.4.0.0, < 2.5)
@@ -406,7 +406,7 @@ DEPENDENCIES
   rails (~> 5.1.4)
   rails_best_practices
   react-rails
-  redis (~> 3.0)
+  redis (~> 4.0)
   reek
   rspec-rails
   rubocop

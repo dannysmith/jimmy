@@ -13,7 +13,7 @@ gem 'rails', '~> 5.1.4'
 
 # Databases
 gem 'pg'
-gem 'redis', '~> 3.0'
+gem 'redis', '~> 4.0'
 
 # Server
 gem 'puma', '~> 3.7'
