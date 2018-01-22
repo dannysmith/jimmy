@@ -16,7 +16,7 @@ gem 'pg'
 gem 'redis', '~> 4.0'
 
 # Server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.11'
 gem 'rack-timeout'
 
 # Styling
