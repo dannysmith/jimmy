@@ -26,3 +26,7 @@ Metrics/BlockLength:
   Exclude:
     - 'Gemfile'
     - 'config/environments/*'
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/*'
