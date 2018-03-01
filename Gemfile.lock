@@ -85,6 +85,7 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     colored (1.2)
+    colorize (0.8.1)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
     crass (1.0.3)
@@ -148,6 +149,11 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
+    log_analyzer (0.2.3)
+      colorize
+      rake
+      terminal-table
+      thor
     lograge (0.9.0)
       actionpack (>= 4)
       activesupport (>= 4)
@@ -338,6 +344,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     stackprof (0.2.11)
+    terminal-table (1.8.0)
+      unicode-display_width (~> 1.1, >= 1.1.1)
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -394,6 +402,7 @@ DEPENDENCIES
   heroku-deflater
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  log_analyzer
   lograge
   mdl
   meta_request

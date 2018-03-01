@@ -76,6 +76,7 @@ group :development, :test do
   # Static analysis
   gem 'brakeman',               require: false # Security audit
   gem 'bundler-audit',          require: false # Depenancy audit
+  gem 'log_analyzer',           require: false # Local log analysis
   gem 'mdl',                    require: false # Markdown linter
   gem 'rails_best_practices',   require: false # Rails BP audit
   gem 'reek',                   require: false # Code Smell audit

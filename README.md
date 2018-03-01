@@ -59,6 +59,8 @@ rubrowser            # Run a server showing the app's node graph
 
 bundle exec derailed bundle:mem     # Analyse memory at boottime
 bundle exec derailed bundle:objects # Analyse memory at runtime
+
+log_analyzer log/development.log -s count # Analyze the dev log for view rendering speeds
 ```
 
 ## Useful Rake Tasks
