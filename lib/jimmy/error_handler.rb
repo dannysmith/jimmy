@@ -15,10 +15,9 @@ module Jimmy
       Rails.logger.send(severity, build_message(error))
     end
 
-    private_class_method :build_message
-
     def self.build_message(error)
       "#{error.class}: #{error.message} [#{Time.now}]"
     end
+    private_class_method :build_message
   end
 end
