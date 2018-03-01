@@ -18,10 +18,13 @@ chdir APP_ROOT do
 
   puts '== Installing dependencies =='
   system! 'gem install bundler --conservative'
-  system('bundle check') || system!('bundle install')
+  system! 'bundle install'
+
+  puts '== Installing Hookup =='
+  system! 'hookup install'
 
   # Install JavaScript dependencies if using Yarn
-  system('bin/yarn')
+  system('nvm use 8; bin/yarn')
 
   # Copy dotenv file
   puts "\n== Copying .env File =="
