@@ -52,9 +52,9 @@ group :development, :test do
   # Development
   gem 'awesome_print'
   gem 'better_errors' # Better Rails error pages
-  gem 'derailed_benchmarks' # Benchmarking
   gem 'binding_of_caller' # Required by better errors.
   gem 'byebug', platforms: %i[mri mingw x64_mingw] # Debugger. Call 'byebug'.
+  gem 'derailed_benchmarks' # Benchmarking
   gem 'dotenv-rails'
   gem 'meta_request' # Supporting gem for RailsPanel chrome extension.
   gem 'pry'

@@ -61,7 +61,7 @@ lowlevel_error_handler do |exception, env|
   Raven.capture_exception(
     exception,
     message: exception.message,
-    extra: { :puma => env },
+    extra: { puma: env },
     transaction: 'Puma'
   )
   # Send a Rack response to the client

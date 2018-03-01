@@ -15,9 +15,10 @@
 #       flash[:error] = e.user_message
 #       redirect_to :somewhere
 #     end
-
-class Jimmy::ExampleError < Jimmy::Error
-  def user_message
-    I18n.t('errors.example')
+module Jimmy
+  class ExampleError < Jimmy::Error
+    def user_message
+      I18n.t('errors.example')
+    end
   end
 end
