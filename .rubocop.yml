@@ -15,6 +15,7 @@ Metrics/BlockLength:
 
 Metrics/MethodLength:
   CountComments: false
+  Max: 15
 
 Metrics/LineLength:
   Max: 130
@@ -28,5 +29,9 @@ Metrics/BlockLength:
     - 'config/environments/*'
 
 Style/MixinUsage:
+  Exclude:
+    - 'bin/*'
+
+Metrics/AbcSize:
   Exclude:
     - 'bin/*'
