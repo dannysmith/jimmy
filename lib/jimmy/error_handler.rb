@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Custom error handler to be used in all rescue blocks when dealing with errors and exceptions.
 module Jimmy
+  # Custom error handler to be used in all rescue blocks when dealing with errors and exceptions.
   class ErrorHandler
     def self.handle(error, severity = :error, metadata = {})
       # Send errors to Sentry
