@@ -25,6 +25,11 @@ gem 'sidekiq'
 # Styling
 gem 'sass-rails', '~> 5.0'
 
+# Pry
+gem 'pry'
+gem 'pry-doc'
+gem 'pry-rails'
+
 # Javascript
 gem 'react-rails'
 gem 'uglifier', '>= 1.3.0'
@@ -61,9 +66,6 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'hookup'
   gem 'meta_request' # Supporting gem for RailsPanel chrome extension.
-  gem 'pry'
-  gem 'pry-doc'
-  gem 'pry-rails'
   gem 'stackprof' # Used by derailed gem for profiling
 
   # Testing
