@@ -18,8 +18,8 @@ RSpec.describe User, type: :model do
     it 'Returns metadata as a key symbolized hash' do
       user.metadata = {'note' => 'some note', 'some_flag' => true}
       user.save!
-      expect(user.metadata.has_key? :note).to be true
-      expect(user.metadata.has_key? :some_flag).to be true
+      expect(user.metadata.key?(:note)).to be true
+      expect(user.metadata.key?(:some_flag)).to be true
 
       # hstore always returns values as trings
       expect(user.metadata[:some_flag]).to eq 'true'
