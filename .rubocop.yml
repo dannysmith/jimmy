@@ -35,3 +35,6 @@ Style/MixinUsage:
 Metrics/AbcSize:
   Exclude:
     - 'bin/*'
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space

@@ -6,6 +6,6 @@ Rails.application.configure do
   config.lograge.keep_original_rails_log = (Rails.env == 'development' && !ENV['CONCISE_LOG'])
 
   config.lograge.custom_options = lambda do |event|
-    { time: event.time }
+    {time: event.time}
   end
 end
