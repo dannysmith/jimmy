@@ -31,8 +31,8 @@ module Jimmy
     config.generators.system_tests = nil
 
     # Use UUIDs as primary keys in activerecord.
-    config.generators do |g|
-      g.orm :active_record, primary_key_type: :uuid
+    config.generators do |generator|
+      generator.orm :active_record, primary_key_type: :uuid
     end
 
     # Require everything in lib/jimmy
