@@ -26,6 +26,7 @@ gem 'sidekiq'
 gem 'sass-rails', '~> 5.0'
 
 # Pry
+gem 'awesome_print'
 gem 'pry'
 gem 'pry-doc'
 gem 'pry-rails'
@@ -58,7 +59,6 @@ gem 'paranoia', '~> 2.2' # Soft Deletion
 
 group :development, :test do
   # Development
-  gem 'awesome_print'
   gem 'better_errors' # Better Rails error pages
   gem 'binding_of_caller' # Required by better errors.
   gem 'byebug', platforms: %i[mri mingw x64_mingw] # Debugger. Call 'byebug'.
