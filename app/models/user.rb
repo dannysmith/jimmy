@@ -8,4 +8,10 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 300 }
   validates :username, presence: true, exclusion: { in: RESERVED_USERNAMES }
   validates :primary_email, presence: true, format: /@/
+
+  # Override ActiveRecord getter because hstore returns keys as strings.
+  def metadata
+    return unless self[:metadata]
+    self[:metadata].deep_symbolize_keys
+  end
 end
