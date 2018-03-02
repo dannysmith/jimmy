@@ -19,6 +19,9 @@ gem 'redis', '~> 4.0'
 gem 'puma', '~> 3.11'
 gem 'rack-timeout'
 
+# Background Work
+gem 'sidekiq'
+
 # Styling
 gem 'sass-rails', '~> 5.0'
 
