@@ -14,7 +14,7 @@ module Jimmy
   #   Where the error is handled:
   #
   #     rescue Jimmy::ExampleError => e
-  #       Jimmy::ErrorHandler.handle(e, e.severity, e.metadata)
+  #       Jimmy::ErrorHandler.handle(e, nil, e.metadata)
   #       flash[:error] = e.user_message
   #       redirect_to :somewhere
   #     end
