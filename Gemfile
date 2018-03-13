@@ -70,6 +70,7 @@ group :development, :test do
 
   # Testing
   gem 'capybara'
+  gem 'coderay' # Syntax highlighting in RSpec
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'

@@ -407,6 +407,7 @@ DEPENDENCIES
   bundler-audit
   byebug
   capybara
+  coderay
   derailed_benchmarks
   dotenv-rails
   factory_bot_rails
