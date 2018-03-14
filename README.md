@@ -37,6 +37,9 @@ Once you're set up, you can run the app with these two commands, in seperate ter
 ```shell
 bin/rails s
 bin/webpack-dev-server
+
+# Run sidekiq to handle Workers
+redis-cli <<< 'flushall';bundle exec sidekiq -C config/sidekiq.yml
 ```
 
 ## Running the Tests
