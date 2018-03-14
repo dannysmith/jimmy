@@ -1,0 +1,21 @@
+/* This is temp test to see if it's picked up by Webpacker */
+
+a {
+  color: green;
+  border-radius: 1px;
+}
+
+body {
+  background: teal;
+  clor: white;
+}
+
+/* These test PostCSS is working... */
+
+::placeholder {
+  color: pink;
+}
+
+nav :any-link {
+  background-color: yellow;
+}
