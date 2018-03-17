@@ -9,7 +9,7 @@ git_source(:github) do |repo_name|
 end
 
 # Basics
-gem 'rails', '~> 5.1.5'
+gem 'rails', '~> 5.2.0.beta'
 
 # Databases
 gem 'pg'
