@@ -61,6 +61,7 @@ gem 'paranoia', '~> 2.2' # Soft Deletion
 # File Storage
 gem 'activestorage'
 gem 'aws-sdk-s3', require: false
+gem 'mini_magick'
 
 group :development, :test do
   # Development
