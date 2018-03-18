@@ -203,6 +203,7 @@ GEM
       railties (>= 3.0.0, < 6)
     method_source (0.9.0)
     mimemagic (0.3.2)
+    mini_magick (4.8.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -464,6 +465,7 @@ DEPENDENCIES
   lograge
   mdl
   meta_request
+  mini_magick
   paranoia (~> 2.2)
   pg
   pry
