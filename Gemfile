@@ -9,6 +9,7 @@ git_source(:github) do |repo_name|
 end
 
 # Basics
+gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rails', '~> 5.2.0.beta'
 
 # Databases

@@ -1,13 +1,17 @@
 /* This is temp test to see if it's picked up by Webpacker */
 
+:root {
+  --background: teal;
+}
+
 a {
   color: green;
   border-radius: 1px;
 }
 
 body {
-  background: teal;
-  clor: white;
+  background: var(--background);
+  color: white;
 }
 
 /* These test PostCSS is working... */
