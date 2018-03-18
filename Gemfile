@@ -58,6 +58,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
 gem 'paranoia', '~> 2.2' # Soft Deletion
 
+# File Storage
+gem 'activestorage'
+gem 'aws-sdk-s3', require: false
+
 group :development, :test do
   # Development
   gem 'better_errors' # Better Rails error pages
