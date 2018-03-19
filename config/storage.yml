@@ -1,15 +1,46 @@
+# Uae these keys to set config.active_storage.service on a per-environment basis.
+
+# Use this service for developing locally when
+#  you do not have a network connectin.
+#  Uncomment:
+#     config.active_storage.service = :local
+#  in config/environments/development.rb and
+#  comment out
+#     config.active_storage.service = :amazon_development
 local:
   service: Disk
   root: <%= Rails.root.join('storage') %>
 
+# Tests should always use a local service to avoid calls to S3.
 test:
   service: Disk
   root: <%= Rails.root.join('tmp/storage') %>
 
-# Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
-amazon:
+# AWS Credentials are encrypted, and store in this project.
+# Use rails credentials:edit to set the AWS secrets.
+
+# By default, AWS is used in development.
+# See above if you need to switch to a loval service.
+amazon_development:
   service: S3
-  access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
-  secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-  region: us-east-1
+  access_key_id: <%= Rails.application.credentials.dig(:development, :aws, :access_key_id) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:development, :aws, :secret_access_key) %>
+  region: eu-west-2
+  bucket: jimmy-development
+
+# See config/environments/production.rb for code
+#  that decides whether to use the staging or production
+# service for active storage.
+amazon_staging:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.dig(:staging, :aws, :access_key_id) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:staging, :aws, :secret_access_key) %>
+  region: eu-west-2
+  bucket: jimmy-staging
+
+amazon_production:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.dig(:production, :aws, :access_key_id) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:production, :aws, :secret_access_key) %>
+  region: eu-west-2
   bucket: jimmy-production

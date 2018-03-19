@@ -42,8 +42,11 @@ Rails.application.configure do
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
 
-  # Store files locally.
-  config.active_storage.service = :local
+  # Store files on AWS
+  # See config/storage.yml for more on this.
+  #
+  # config.active_storage.service = :local
+  config.active_storage.service = :amazon_development
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
