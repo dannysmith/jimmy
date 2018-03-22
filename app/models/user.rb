@@ -11,7 +11,7 @@ class User < ApplicationRecord
   # Validations
   validates :name, presence: true, length: {maximum: 300}
   validates :username, uniqueness: true, exclusion: {in: RESERVED_USERNAMES}
-  validates :primary_email, uniqueness: true, format: /@/
+  validates :primary_email, uniqueness: true, format: /\A.+@.+\z/
 
   # Class Methods
   def self.lookup_by_email_or_username(email_or_username)
