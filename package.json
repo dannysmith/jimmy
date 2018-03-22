@@ -6,6 +6,9 @@
     "Danny Smith <hi@danny.is> (http://danny.is)"
   ],
   "license": "UNLICENSED",
+  "engines": {
+    "node": ">=8.9.1"
+  },
   "dependencies": {
     "@rails/webpacker": "^3.3.1",
     "actioncable": "^5.1.5",
