@@ -62,7 +62,7 @@ lowlevel_error_handler do |exception, env|
     exception,
     message: exception.message,
     extra: {puma: env},
-    transaction: 'Puma'
+    transaction: 'Puma',
   )
   # Send a Rack response to the client
   [500, {}, ["An error has occurred, and engineers have been informed. Please reload the page.\n"]]

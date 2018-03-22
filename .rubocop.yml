@@ -41,3 +41,6 @@ Layout/SpaceInsideHashLiteralBraces:
 
 Rails:
   Enabled: true
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
