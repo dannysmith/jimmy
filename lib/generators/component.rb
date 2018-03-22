@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'rails/generators'
+
 # Generates an ERB-based froen-end component.
 # See documentation for more details.
 class ComponentGenerator < Rails::Generators::Base
