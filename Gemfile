@@ -23,9 +23,6 @@ gem 'rack-timeout'
 # Background Work
 gem 'sidekiq'
 
-# Styling
-gem 'sass-rails', '~> 5.0'
-
 # Pry
 gem 'awesome_print'
 gem 'pry'
