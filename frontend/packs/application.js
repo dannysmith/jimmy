@@ -10,6 +10,11 @@ import "styles";
 // ERB Components
 import "components/login-form/login-form";
 
+// Turbolinks
+import Turbolinks from "turbolinks";
+
+Turbolinks.start();
+
 // React Components
 const componentRequireContext = require.context("components/react", true);
 const ReactRailsUJS = require("react_ujs");
