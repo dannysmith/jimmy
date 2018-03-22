@@ -1,4 +1,4 @@
-<%= form_with(model: user, local: true) do |form| %>
+<%= form_with(model: user, local: true) do |f| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(user.errors.count, "error") %> prevented this user from being saved:</h2>
@@ -12,26 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :username %>
-    <%= form.text_field :username %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
   </div>
 
   <div class="field">
-    <%= form.label :primary_email %>
-    <%= form.text_field :primary_email %>
+    <%= f.label :primary_email %>
+    <%= f.text_field :primary_email %>
   </div>
 
   <div class="field">
-    <%= form.label :avatar %>
-    <%= form.file_field :avatar %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= f.submit %>
   </div>
 <% end %>
