@@ -24,7 +24,7 @@ module Jimmy
     end
 
     def self.build_message(error)
-      "#{error.class}: #{error.message} [#{Time.now}]"
+      "#{error.class}: #{error.message} [#{Time.now.utc}]"
     end
     private_class_method :build_message
   end
