@@ -9,6 +9,6 @@ namespace :assets do
   task 'precompile' do
     puts 'Overriding default assets:precompile...'
     # Rake::Task['yarn:install'].execute
-    # Rake::Task['webpacker:compile'].execute
+    Rake::Task['webpacker:compile'].execute
   end
 end
