@@ -1,17 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-class App extends React.Component {
+class Greeting extends React.Component {
   render () {
     return (
-      <div className="site-wrapper">
+      <div className="greeting">
         <h1>{this.props.greeting}</h1>
       </div>
     );
   }
 }
 
-App.propTypes = {
+Greeting.propTypes = {
   greeting: PropTypes.string
 };
-export default App
+
+export default Greeting
