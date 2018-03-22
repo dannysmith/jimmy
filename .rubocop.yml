@@ -38,3 +38,6 @@ Metrics/AbcSize:
 
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
+
+Rails:
+  Enabled: true
