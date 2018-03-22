@@ -1,6 +1,6 @@
 {
   "name": "jimmy",
-  "private": false,
+  "private": true,
   "author": "Danny Smith",
   "contributors": [
     "Danny Smith <hi@danny.is> (http://danny.is)"
