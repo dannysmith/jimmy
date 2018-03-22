@@ -14,7 +14,8 @@ class ExampleWorker
     # Do something
     User.create(name: name,
                 username: name.downcase.tr(' ', ''),
-                primary_email: email)
+                primary_email: email,
+                password: 'password123')
 
     sleep 20 unless Rails.env.test? # Simulate a slow task
 

@@ -2,7 +2,7 @@
 
 # Send test metrics
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start 'rails'
 
 # Load Test Environment
 require 'spec_helper'
