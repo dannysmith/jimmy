@@ -1,0 +1,19 @@
+.c-login-form {
+  height: 50vh;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  padding: 1rem;
+
+  h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+  }
+
+  &--actions {
+    margin-top: 1em;
+    border-top: 1px dashed white;
+  }
+}

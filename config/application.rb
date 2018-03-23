@@ -11,8 +11,8 @@ require 'action_controller/railtie'
 require 'action_mailer/railtie'
 require 'action_view/railtie'
 require 'action_cable/engine'
-require 'sprockets/railtie'
 require 'active_storage/engine'
+# require 'sprockets/railtie'
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -39,5 +39,14 @@ module Jimmy
     # Require everything in lib/jimmy
     config.autoload_paths << Rails.root.join('lib')
     config.eager_load_paths << Rails.root.join('lib')
+
+    # Do not generate anything in app/assets
+    config.generators do |generator|
+      generator.test_framework  false
+      generator.stylesheets     false
+      generator.javascripts     false
+      generator.helper          false
+      generator.channel         assets: false
+    end
   end
 end
