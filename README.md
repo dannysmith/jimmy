@@ -14,32 +14,24 @@ Mainly, Jimmy is intended as an example app, for use when Danny is teaching. It 
 
 ## Installation and Configuration
 
-Ensure you have Homebrew installed (if you are on macOS), and install dependancies:
-
-```shell
-brew install postgresql # Follow instructions
-brew install redis
-brew install nodejs
-```
+Ensure you have Homebrew and Ruby installed (if you are on macOS).
 
 Now clone the project and run the setup commands
 
 ```shell
 git clone git@github.com:dannysmith/jimmy.git
 cd jimmy
+brew tap homebrew/bundle
+brew bundle
 bin/setup
 ```
 
 ## Running the App Locally
 
-Once you're set up, you can run the app with these two commands, in seperate terminals:
+Once you're set up, you can run this command, which will launch the processes defined in the Procfile in [Overmind](https://github.com/DarthSim/overmind):
 
 ```shell
-bin/rails s
-bin/webpack-dev-server
-
-# Run sidekiq to handle Workers
-redis-cli <<< 'flushall';bundle exec sidekiq -C config/sidekiq.yml
+OVERMIND_CAN_DIE=release overmind s
 ```
 
 ## Running the Tests
