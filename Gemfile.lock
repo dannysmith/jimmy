@@ -219,7 +219,7 @@ GEM
     parallel (1.12.1)
     paranoia (2.4.0)
       activerecord (>= 4.0, < 5.2)
-    parser (2.5.0.4)
+    parser (2.5.0.5)
       ast (~> 2.4.0)
     path_expander (1.0.3)
     pdf-core (0.7.0)
@@ -504,7 +504,7 @@ DEPENDENCIES
   webpacker
 
 RUBY VERSION
-   ruby 2.5.0p0
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.1
