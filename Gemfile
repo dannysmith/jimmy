@@ -56,7 +56,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Active Model/Record
 gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
-gem 'paranoia', '~> 2.2' # Soft Deletion
+gem 'paranoia', '~> 2.4' # Soft Deletion
 
 # File Storage
 gem 'activestorage'
