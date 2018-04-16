@@ -74,6 +74,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'hookup'
   gem 'meta_request' # Supporting gem for RailsPanel chrome extension.
+  gem 'pp_sql' # Prettier SQL in concole and logs
   gem 'stackprof' # Used by derailed gem for profiling
 
   # Testing
