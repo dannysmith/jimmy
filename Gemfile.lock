@@ -363,7 +363,7 @@ GEM
     sentry-raven (2.7.3)
       faraday (>= 0.7.6, < 1.0)
     sexp_processor (4.11.0)
-    shog (0.2.0)
+    shog (0.2.1)
       colorize (>= 0.8)
       rails (>= 4)
     shoulda-matchers (3.1.2)
