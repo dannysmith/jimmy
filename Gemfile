@@ -119,6 +119,7 @@ end
 
 group :test do
   gem 'simplecov', require: false # Code coverage
+  gem 'test-prof' # A Suite of testing tools
 end
 
 group :production do
