@@ -16,6 +16,9 @@ html {
     Arial,
     sans-serif;
   font-variant-ligatures: common-ligatures discretionary-ligatures;
+
+  /* Use smooth scrolling for fragment links */
+  scroll-behavior: smooth;
 }
 
 *,
