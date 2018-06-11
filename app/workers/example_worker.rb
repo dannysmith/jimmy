@@ -9,6 +9,10 @@ class ExampleWorker
   sidekiq_options queue: :scheduled_tasks, retry: false
 
   def perform(name, email)
+    # IMPORTANT: In real workers, don't pur your logic here. Put it
+    #            in a seperate module or class.
+    # See https://dev.to/jamby1100/coding-sidekiq-workers-the-right-way-4jij
+
     Rails.logger.info 'Starting Example Worker'
 
     # Do something
