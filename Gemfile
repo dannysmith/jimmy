@@ -95,6 +95,7 @@ group :development, :test do
   gem 'reek',                   require: false # Code Smell audit
   gem 'rubocop',                require: false # Code stle checker
   gem 'sandi_meter',            require: false # Sandi Metz' BP audit
+  gem 'recent_ruby',            require: false # Checks for latest ruby version
 
   # static Analysis GUIs
   gem 'rubrowser',              require: false # Generate a ruby code dependency graph

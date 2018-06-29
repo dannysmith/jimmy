@@ -48,6 +48,7 @@ bundle exec derailed bundle:mem     # Analyse memory at boottime
 bundle exec derailed bundle:objects # Analyse memory at runtime
 
 log_analyzer log/development.log -s count # Analyze the dev log for view rendering speeds
+recent_ruby --gemfile Gemfile # Check wether the ruby version in the Gemfile has any security vulnerabilities.
 ```
 
 ## Useful Rake Tasks
