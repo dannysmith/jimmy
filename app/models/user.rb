@@ -1,5 +1,23 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :uuid             not null, primary key
+#  metadata        :hstore
+#  name            :string           not null
+#  password_digest :string
+#  primary_email   :string           not null
+#  username        :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+# Indexes
+#
+#  index_users_on_username  (username)
+#
+
 # The User model represents individual users in the system.
 class User < ApplicationRecord
   RESERVED_USERNAMES = %w[admin superuser administrator root jimmy].freeze
