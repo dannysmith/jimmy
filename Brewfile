@@ -5,12 +5,12 @@
 #   already have rbenv, ruby etc installed already.
 
 # Project Dependencies
-tap 'postgresql'
-tap 'redis'
-tap 'nodejs'
-tap 'chromedriver'
+brew 'postgresql'
+brew 'redis'
+brew 'nodejs'
+brew 'chromedriver'
 
 # Development Tools
-tap 'heroku'
-tap 'overmind'
-tap 'imagemagick'
+brew 'heroku'
+brew 'overmind'
+brew 'imagemagick'
