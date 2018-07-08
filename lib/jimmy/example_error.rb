@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# frozen_string_literal: true
-
 module Jimmy
   # Custom erros like this can be used alongside the ErrorHandler
   #
