@@ -7,7 +7,7 @@
   ],
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=8.9.1"
+    "node": ">=8.11.3"
   },
   "dependencies": {
     "@rails/webpacker": "^3.3.1",
@@ -24,10 +24,10 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-import-resolver-webpack": "^0.8.4",
+    "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "lint-staged": "^7.0.0",
