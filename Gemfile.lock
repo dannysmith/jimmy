@@ -228,6 +228,9 @@ GEM
     path_expander (1.0.3)
     pdf-core (0.7.0)
     pg (1.0.0)
+    pg_query (1.0.2)
+    pghero (2.1.1)
+      activerecord
     powerpack (0.1.2)
     prawn (2.2.2)
       pdf-core (~> 0.7.0)
@@ -479,6 +482,8 @@ DEPENDENCIES
   mini_magick
   paranoia (~> 2.2)
   pg
+  pg_query (>= 0.9.0)
+  pghero
   pry
   pry-doc
   pry-rails

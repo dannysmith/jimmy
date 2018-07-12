@@ -42,6 +42,8 @@ gem 'lograge'
 gem 'shog'
 
 # Reporting
+gem 'pghero'
+gem 'pg_query', '>= 0.9.0'
 gem 'sentry-raven'
 gem 'skylight'
 
