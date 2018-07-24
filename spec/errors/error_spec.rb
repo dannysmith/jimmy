@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'rails_helper'
+
 describe Jimmy::Error do
   let(:error_without_severity) { Jimmy::Error.new('This is an Error') }
   let(:error_with_severity) { Jimmy::Error.new('This is a Warning', :warn, data: 'Some metadata') }
