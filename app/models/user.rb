@@ -9,6 +9,8 @@ class User < ApplicationRecord
 
   RESERVED_USERNAMES = %w[admin superuser administrator root jimmy].freeze
 
+  JIMMY_ADMINISTRATORS = %w[dannysmith].freeze
+
   # Fields and Relations
   has_one_attached :avatar
 
@@ -21,6 +23,10 @@ class User < ApplicationRecord
   def self.lookup_by_email_or_username(email_or_username)
     find_by(username: email_or_username) ||
       find_by(email: email_or_username)
+  end
+
+  def jimmy_admin?
+    JIMMY_ADMINISTRATORS.include? username
   end
 
   # Override ActiveRecord getter because hstore returns keys as strings.

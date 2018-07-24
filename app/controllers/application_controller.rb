@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
-  include SetCurrentRequestDetails
-
   protect_from_forgery with: :exception
+
+  include SetCurrentRequestDetails
 
   # Look in /frontend for partials, too.
   prepend_view_path Rails.root.join('frontend')
