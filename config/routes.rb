@@ -30,7 +30,7 @@ Rails.application.routes.draw do
 
   # TODO: Scope these to admin users once devise is installed.
   # authenticate :user, -> (user) { user.admin? } do
-    mount PgHero::Engine, at: 'admin/pghero'
-    mount Sidekiq::Web, at: 'admin/sidekiq'
+  mount PgHero::Engine, at: 'admin/pghero'
+  mount Sidekiq::Web, at: 'admin/sidekiq'
   # end
 end
