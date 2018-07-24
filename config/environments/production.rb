@@ -97,4 +97,7 @@ Rails.application.configure do
                                   else
                                     :amazon_production
                                   end
+
+  # Point links generated in emails here...
+  config.action_mailer.default_url_options = {host: 'jimmy.danny.is'}
 end

@@ -52,4 +52,7 @@ Rails.application.configure do
     Bullet.bullet_logger = true
     # Bullet.raise = true # raise an error if n+1 query occurs. Off by default
   end
+
+  # Point links generated in emails here...
+  config.action_mailer.default_url_options = {host: 'jimmy.danny.is'}
 end

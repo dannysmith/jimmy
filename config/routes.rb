@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   root to: 'site#index'
 
   #############################################################
-  ###                      PUBLIC SITE                      ###
+  ###                       ADMIN SITE                      ###
   #############################################################
 
   # TODO: Scope these to admin users once devise is installed.
