@@ -3,6 +3,7 @@
 # The User model represents individual users in the system.
 class User < ApplicationRecord
   RESERVED_USERNAMES = %w[admin superuser administrator root jimmy].freeze
+  ADMINISTRATORS = %w[dannysmith].freeze
 
   # Fields and Relations
   has_secure_password
@@ -17,6 +18,12 @@ class User < ApplicationRecord
   def self.lookup_by_email_or_username(email_or_username)
     find_by(username: email_or_username) ||
       find_by(primary_email: email_or_username)
+  end
+
+  # Instance Mathods
+
+  def admin?
+    ADMINISTRATORS.include? username
   end
 
   # Override ActiveRecord getter because hstore returns keys as strings.

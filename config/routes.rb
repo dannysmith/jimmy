@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'sidekiq/web'
+require_relative '../app/models/route_constraints/admin.rb'
 
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 Rails.application.routes.draw do
@@ -25,12 +26,11 @@ Rails.application.routes.draw do
   root to: 'site#index'
 
   #############################################################
-  ###                      PUBLIC SITE                      ###
+  ###                       ADMIN SITE                      ###
   #############################################################
 
-  # TODO: Scope these to admin users once devise is installed.
-  # authenticate :user, -> (user) { user.admin? } do
-  mount PgHero::Engine, at: 'admin/pghero'
-  mount Sidekiq::Web, at: 'admin/sidekiq'
-  # end
+  namespace :admin, constraints: RouteConstraint::Admin.new do
+    mount PgHero::Engine, at: 'pghero'
+    mount Sidekiq::Web, at: 'sidekiq'
+  end
 end
