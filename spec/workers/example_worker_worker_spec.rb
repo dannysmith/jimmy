@@ -14,7 +14,7 @@ RSpec.describe ExampleWorker, type: :worker do
       # Verify that the worker did what it was supposed to
       user = User.where(name: 'Mister ExampleWorker Test').last
       expect(user).not_to be_nil
-      expect(user.primary_email).not_to be_nil
+      expect(user.email).not_to be_nil
     end
   end
 end

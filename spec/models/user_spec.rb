@@ -3,14 +3,9 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  context 'Attributes and Relations' do
-    it { should have_secure_password }
-  end
-
   context 'Validations' do
     subject { FactoryBot.create(:user) }
     it { should validate_uniqueness_of(:username) }
-    it { should validate_uniqueness_of(:primary_email) }
     it { should validate_presence_of(:name) }
 
     it { should validate_exclusion_of(:username).in_array(%w[admin superuser administrator root jimmy]) }

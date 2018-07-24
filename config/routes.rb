@@ -13,15 +13,6 @@ Rails.application.routes.draw do
   # Devise
   devise_for :users
 
-  # Users
-  resources :users, except: %i[index new]
-  get '/signup', to: 'users#new'
-
-  # Sessions
-  get '/login',  to: 'sessions#new'
-  post '/login', to: 'sessions#create'
-  get '/logout', to: 'sessions#destroy'
-
   #############################################################
   ###                      PUBLIC SITE                      ###
   #############################################################
