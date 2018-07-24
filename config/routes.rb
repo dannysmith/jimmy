@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   ###                   USER AND SESSIONS                   ###
   #############################################################
 
+  # Devise
+  devise_for :users
+
   # Users
   resources :users, except: %i[index new]
   get '/signup', to: 'users#new'

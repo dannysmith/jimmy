@@ -2,6 +2,11 @@
 
 # The User model represents individual users in the system.
 class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+
   RESERVED_USERNAMES = %w[admin superuser administrator root jimmy].freeze
 
   # Fields and Relations
