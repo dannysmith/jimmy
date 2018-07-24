@@ -9,7 +9,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.lookup_by_email_or_username(session_params[:username_or_email])
+    oauth_details = request.env["omniauth.auth"]
+
+    if oauth_details # If this is an OAuth login...
+      user = User.from_omniauth(oauth_details)
+      raise
+    else
+      user = User.lookup_by_email_or_username(session_params[:username_or_email])
+    end
 
     if user&.authenticate(session_params[:password])
       session[:user_id] = user.id # Store a session
@@ -22,6 +29,12 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
     redirect_to(login_path, notice: "You've been logged out")
+  end
+
+  protected
+
+  def auth_hash
+    request.env['omniauth.auth']
   end
 
   private

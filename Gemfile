@@ -20,6 +20,10 @@ gem 'redis', '~> 4.0'
 gem 'puma', '~> 3.11'
 gem 'rack-timeout'
 
+# Authentication & Authorization
+gem 'omniauth'
+gem 'omniauth-github'
+
 # Background Work
 gem 'sidekiq'
 
