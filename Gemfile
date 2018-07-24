@@ -42,8 +42,8 @@ gem 'lograge'
 gem 'shog'
 
 # Reporting
-gem 'pghero'
 gem 'pg_query', '>= 0.9.0'
+gem 'pghero'
 gem 'sentry-raven'
 gem 'skylight'
 
@@ -95,10 +95,10 @@ group :development, :test do
   gem 'log_analyzer',           require: false # Local log analysis
   gem 'mdl',                    require: false # Markdown linter
   gem 'rails_best_practices',   require: false # Rails BP audit
+  gem 'recent_ruby',            require: false # Checks for latest ruby version
   gem 'reek',                   require: false # Code Smell audit
   gem 'rubocop',                require: false # Code stle checker
   gem 'sandi_meter',            require: false # Sandi Metz' BP audit
-  gem 'recent_ruby',            require: false # Checks for latest ruby version
 
   # static Analysis GUIs
   gem 'rubrowser',              require: false # Generate a ruby code dependency graph
