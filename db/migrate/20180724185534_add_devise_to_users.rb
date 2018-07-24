@@ -50,10 +50,6 @@ class AddDeviseToUsers < ActiveRecord::Migration[5.2]
     remove_column :users, :current_sign_in_ip
     remove_column :users, :last_sign_in_ip
 
-    # Remove idnexes for new fields
-    remove_index :users, :email
-    remove_index :users, :reset_password_token
-
     # Reverse Removal existing authentication fields
     add_column :users, :primary_email, :string
     add_column :users, :password_digest, :string
