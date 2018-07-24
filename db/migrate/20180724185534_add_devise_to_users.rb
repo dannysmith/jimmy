@@ -45,10 +45,10 @@ class AddDeviseToUsers < ActiveRecord::Migration[5.2]
 
     ## Trackable
     remove_column :users, :sign_in_count
-    remove_column :users, :current_sign_in_a
-    remove_column :users, :last_sign_in_a
-    remove_column :users, :current_sign_in_i
-    remove_column :users, :last_sign_in_i
+    remove_column :users, :current_sign_in_at
+    remove_column :users, :last_sign_in_at
+    remove_column :users, :current_sign_in_ip
+    remove_column :users, :last_sign_in_ip
 
     # Remove idnexes for new fields
     remove_index :users, :email
