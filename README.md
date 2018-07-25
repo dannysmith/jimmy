@@ -51,6 +51,8 @@ log_analyzer log/development.log -s count # Analyze the dev log for view renderi
 recent_ruby --gemfile Gemfile # Check wether the ruby version in the Gemfile has any security vulnerabilities.
 ```
 
+In addition to these tools, [AccessLint](https://github.com/apps/accesslint) will check for accessibility issues on GitHub PRs.
+
 ## Useful Rake Tasks
 
 ```ruby
@@ -60,12 +62,23 @@ rake traceroute # Search for unused routes and unreachable actions
 
 ## Commits Policy and workflow
 
+When working on a new feature, always take a feature branch from `master` and open a PR after your first commit.
+
+When your branch is feature-complete, run through some checks:
+
+1.  Ensure you have addressed any comments on the PR.
+2.  Get some feedback from the audit tools listed above `bin/analyze all` and `rails_best_practices` are particularly useful. You may also want to check for N+1 queries and excessive menory use. Double-check that the tests are all green.
+3.  Run through the **Definition of Done: Ready to Merge** checklist.
+4.  Complete the empty parts of the PR template, add a **Ready for Review** label and assign some reviewers.
+
+When your PR has been reviewed and is ready to merge to `master`, complete the **Definition of Done: Ready to Merge** checklist.
+
 ## Deployment Pipeline
 
 The apps deployment pipeline is managed entirely via Heroku.
 
 ## Contributors
 
-| Github        | Name              | Email                    |
-| --------------|-------------------|--------------------------|
-| dannysmith    | Danny Smith       | hi@danny.is              |
+| Github     | Name        | Email       |
+| ---------- | ----------- | ----------- |
+| dannysmith | Danny Smith | hi@danny.is |
