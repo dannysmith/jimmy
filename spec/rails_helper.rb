@@ -2,7 +2,15 @@
 
 # Send test metrics
 require 'simplecov'
-SimpleCov.start 'rails'
+require 'simplecov-lcov'
+
+SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
+SimpleCov.formatter = SimpleCov::Formatter::LcovFormatter
+SimpleCov.start do
+  add_filter(%r{^\/spec\/}) # For RSpec
+end
+
+require 'undercover'
 
 # Load Test Environment
 require 'spec_helper'

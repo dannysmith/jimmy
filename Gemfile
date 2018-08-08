@@ -84,6 +84,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'undercover'
 
   # Dynamic Analysis
   gem 'bullet' # N+1 Queries
@@ -118,7 +119,8 @@ group :development do
 end
 
 group :test do
-  gem 'simplecov', require: false # Code coverage
+  gem 'simplecov' # Code coverage
+  gem 'simplecov-lcov'
   gem 'test-prof' # A Suite of testing tools
 end
 
