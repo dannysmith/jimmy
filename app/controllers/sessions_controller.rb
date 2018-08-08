@@ -9,19 +9,19 @@ class SessionsController < ApplicationController
   end
 
   def create
-    oauth_details = request.env["omniauth.auth"]
-
-    if oauth_details # If this is an OAuth login...
-      user = User.from_omniauth(oauth_details)
-      raise
+    req = CreateSessionRequest.new(params)
+    if req.valid_oauth_login?
+      # Create session
+    elsif req.invalid_oauth_login_for_user_with_email_already_registered?
+      # Oauth is okay, but a user already exists with that email.
+      # Kick out with a message telling user to log in and connect provider.
+    elsif req.invalid_oauth_login_for_new_user?
+      # This is probably a new user.
+      # Kick into signup flow
+    elsif req.valid_password_login?
+      # Create Session
     else
-      user = User.lookup_by_email_or_username(session_params[:username_or_email])
-    end
-
-    if user&.authenticate(session_params[:password])
-      session[:user_id] = user.id # Store a session
-      redirect_to(dashboard_path)
-    else
+      # Not a valid signin attempt.
       redirect_to(login_path, notice: 'Incorrect login details')
     end
   end
