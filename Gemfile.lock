@@ -307,7 +307,7 @@ GEM
     recent_ruby (0.1.1)
       methadone (~> 1.9.5)
       parser
-    redis (4.0.1)
+    redis (4.0.2)
     reek (4.8.2)
       codeclimate-engine-rb (~> 0.4.0)
       parser (>= 2.5.0.0, < 2.6)
