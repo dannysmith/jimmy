@@ -35,7 +35,7 @@ gem 'pry-rails'
 # Javascript
 gem 'react-rails'
 gem 'uglifier', '>= 1.3.0'
-gem 'webpacker'
+gem 'webpacker', '>= 4.0.x'
 
 # Logging
 gem 'lograge'
