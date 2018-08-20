@@ -10,7 +10,7 @@ module Jimmy
       severity = error&.severity || :error if severity.nil?
 
       # Send errors to Sentry
-      Raven.capture_exception(error, level: severity.to_s, extra: metadata)
+      Raven.capture_exception(error, level: severity.to_s, extra: {error_metadata: metadata, context: Current.context})
 
       # Write the error message to the log
       log_error(error, severity)
@@ -24,7 +24,7 @@ module Jimmy
     end
 
     def self.build_message(error)
-      "#{error.class}: #{error.message} [#{Time.now.utc}]"
+      "#{error.class}: #{error.message} [#{Time.now.utc}]\n#{Current.request_details.pretty_inspect}"
     end
     private_class_method :build_message
   end
