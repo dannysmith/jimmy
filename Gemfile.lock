@@ -494,7 +494,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.11)
   rack-timeout
-  rails (~> 5.2.0)
+  rails (~> 5.2.1)
   rails_best_practices
   react-rails
   recent_ruby
