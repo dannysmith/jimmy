@@ -1,4 +1,4 @@
 plugins:
   postcss-nested: {}
   postcss-import: {}
-  postcss-cssnext: {}
+  postcss-preset-env: {}

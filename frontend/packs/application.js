@@ -8,7 +8,7 @@
 import "styles";
 
 // ERB Components
-import "components/login-form/login-form";
+import "components/erb/login-form/login-form";
 
 // Turbolinks
 import Turbolinks from "turbolinks";
