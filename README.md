@@ -23,7 +23,7 @@ bin/setup
 Once you're set up, you can run this command, which will launch the processes defined in the Procfile in [Overmind](https://github.com/DarthSim/overmind):
 
 ```shell
-OVERMIND_CAN_DIE=release overmind s
+./server
 ```
 
 ## Running the Tests
