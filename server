@@ -1,0 +1,3 @@
+# This runs node -v because Danny lazy-loads nvm
+
+node -v && OVERMIND_CAN_DIE=release overmind s
