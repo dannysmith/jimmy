@@ -11,6 +11,7 @@ module Jimmy
 
     def initialize(message, severity = :error, metadata = {})
       raise ArgumentError "Severity must be one of #{PERMITTED_SEVERITIES}" unless PERMITTED_SEVERITIES.include? severity
+
       super(message)
       @metadata = metadata
       @severity = severity
