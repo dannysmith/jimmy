@@ -27,25 +27,31 @@ class StaticCodeAnalyer
   # Run Rubocop against all files ending in .rb that have changed or been added since the last commit.
   def rubocop
     return if changed_ruby_files.empty?
+
     output = `rubocop --color --display-cop-names --extra-details --display-style-guide #{changed_files.join(' ')}`
     return if $CHILD_STATUS.success?
+
     heading('Rubocop', output)
   end
 
   # Run Reek against all files ending in .rb that have changed or been added since the last commit.
   def reek
     return if changed_ruby_files.empty?
+
     output = `reek --color #{changed_files.join(' ')}`
     return if output&.empty? || output.gsub(/\e\[(\d+)m/, '').match?(/^0 total warnings/)
+
     heading('Reek', output)
   end
 
   # Check all files ending in .rb that have changed or been added since the last commit for syntax errors.
   def compile
     return if changed_ruby_files.empty?
+
     errors = changed_ruby_files.each_with_object([]) do |file, es|
       output = `ruby -cw "#{file}" 2>&1`
       next if output == "Syntax OK\n"
+
       es << output
     end
     heading('Ruby Warnings', errors.join) unless errors.empty?
@@ -54,8 +60,10 @@ class StaticCodeAnalyer
   # Run markdown linter against .md files that have changed or been added since the last commit
   def markdown
     return if changed_markdown_files.empty?
+
     output = `mdl #{changed_markdown_files.join(' ')}`
     return if output&.empty?
+
     heading('Markdown Linter', output)
   end
 
@@ -63,6 +71,7 @@ class StaticCodeAnalyer
   def todos
     output = `bin/rails notes`
     return if output&.empty?
+
     heading('TODO\'s', output)
   end
 
@@ -70,6 +79,7 @@ class StaticCodeAnalyer
   def bundler_audit
     output = `bundle audit check --update`
     return if output&.empty?
+
     heading('Bundler Audit', output)
   end
 
@@ -77,6 +87,7 @@ class StaticCodeAnalyer
   def brakeman
     output = `brakeman -q --color`
     return if output&.empty?
+
     heading('Brakeman', output)
   end
 

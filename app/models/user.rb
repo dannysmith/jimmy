@@ -29,6 +29,7 @@ class User < ApplicationRecord
   # Override ActiveRecord getter because hstore returns keys as strings.
   def metadata
     return unless self[:metadata]
+
     self[:metadata].deep_symbolize_keys
   end
 end

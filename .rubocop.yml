@@ -11,8 +11,11 @@ Metrics/BlockLength:
   CountComments: false
   Max: 20
   Exclude:
-  - 'config/environments/*'
-  - 'spec/*'
+    - 'config/environments/*'
+    - 'spec/**/*'
+    - 'Gemfile'
+    - 'config/environments/*'
+    - 'bin/setup'
 
 Metrics/MethodLength:
   CountComments: false
@@ -23,11 +26,6 @@ Metrics/LineLength:
 
 Documentation:
   Enabled: false
-
-Metrics/BlockLength:
-  Exclude:
-    - 'Gemfile'
-    - 'config/environments/*'
 
 Style/MixinUsage:
   Exclude:

@@ -26,7 +26,8 @@ RSpec.describe Current, type: :model do
   end
 
   it 'Returns request details as an object' do
-    ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36'
+    ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 ' \
+         '(KHTML, like Gecko) Chrome/69.0.3497.23 Safari/537.36'
     expected_result = {
       request_id: 'cff6c0bc-37fe-40fe-8eb1-a2c5e738a1c6',
       user_agent: ua,
