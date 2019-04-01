@@ -2304,10 +2304,10 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-coffeescript@2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-2.3.1.tgz#a25f69c251d25805c9842e57fc94bfc453ef6aed"
-  integrity sha512-DNJmSPMyiz+OjWYyuDXNBcFutDjP2TS2owsZ8YvT65hA8c5IdHWIBqdA3Yf/XHoK23d/f1HqLjQbEJJZJoeV1w==
+coffeescript@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-2.4.0.tgz#6b754113ec488f73aa501bee30f2c05ee12c7213"
+  integrity sha512-VIAMBUX0vrQwCr9nSbQ63G1j0Ys8wGZg5x5jXRcRodm6b07TIFLaVe1QvPS9Qk/m1uwPcAZn8kJMf4aXhScBxQ==
 
 collapse-white-space@^1.0.2:
   version "1.0.4"
